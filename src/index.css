@@ -1,13 +1,41 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  list-style: none;
+  vertical-align: baseline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --index:calc(1vw + 1vh);
+  --color-header:#f4efec;
+  --color-text:#cdc6c3;
+  --gallery-gap:calc(var(--index) * 10)
+}
+@font-face{
+  font-family: raleway-c;
+  src: url(./components/assets/fonts/raleway-regular.woff2);
+}
+@font-face{
+  font-family: outfit-c;
+  src: url(./components/assets/fonts/outfit-regular.woff2);
+}
+
+body{
+  background-image: url(./components/assets/img/bg.jpg);
+  background-size: 50px;
+  color: #fafafa;
+  font-family:raleway-c;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: outfit-c;
 }
